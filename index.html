@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clínica Vida & Saúde</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #00796B;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #00796B;
+    }
+    .services, .team {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .service, .member {
+      flex: 1 1 calc(33.333% - 20px);
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .service img, .member img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      background: #00796B;
+      color: white;
+      border: none;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Clínica Vida & Saúde</h1>
+  <p>Excelência em cuidados médicos, exames e bem-estar</p>
+</header>
+<section>
+  <h2>Serviços Oferecidos</h2>
+  <div class="services">
+    <div class="service">
+      <img src="imagens/consulta-medica.jpg" alt="Consulta Médica">
+      <h3>Atendimento Médico</h3>
+      <p>Consultas com clínico geral e especialistas para diagnóstico e acompanhamento da sua saúde.</p>
+    </div>
+    <div class="service">
+      <img src="imagens/exame-de-sangue.jpg" alt="Exame de Sangue">
+      <h3>Exames Laboratoriais</h3>
+      <p>Exames laboratoriais com precisão e agilidade, incluindo coleta de sangue e análises clínicas.</p>
+    </div>
+  </div>
+</section>
+<section>
+  <h2>Nossa Equipe</h2>
+  <div class="team">
+    <div class="member">
+      <img src="imagens/dra-camila.jpg" alt="Dra. Camila">
+      <h3>Dra. Camila</h3>
+      <p>Dermatologista</p>
+    </div>
+    <div class="member">
+      <img src="imagens/dr-joao.jpg" alt="Dr. João">
+      <h3>Dr. João</h3>
+      <p>Nutricionista</p>
+    </div>
+    <div class="member">
+      <img src="imagens/enf-paula.jpg" alt="Enf. Paula">
+      <h3>Enf. Paula</h3>
+      <p>Enfermeira</p>
+    </div>
+  </div>
+</section>
+<section>
+  <h2>Quer saber mais?</h2>
+  <p>Preencha o formulário abaixo e entraremos em contato com você!</p>
+  <form>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="cidade">Cidade:</label>
+    <input type="text" id="cidade" name="cidade" required>
+    <label for="estado">Estado:</label>
+    <select id="estado" name="estado" required>
+      <option value="">Selecione...</option>
+      <option value="SP">SP</option>
+      <option value="RJ">RJ</option>
+      <option value="MG">MG</option>
+      <option value="BA">BA</option>
+    </select>
+    <input type="submit" value="Enviar">
+  </form>
+</section>
+<footer>
+  &copy; 2025 Clínica Vida & Saúde. Todos os direitos reservados.
+</footer>
+</body>
+</html>
